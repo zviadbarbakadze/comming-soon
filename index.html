@@ -22,8 +22,11 @@
       Hello fellow shoppers! We're currently building our new fashion store. 
       Add your email below to stay up-to-date with announcements and our launch deals.
     </p>
-    <input type="email" class="email" name="email" placeholder=" Email Address">
-    <img src="./images/icon-arrow.svg" alt="arrow" class="arrow">
+    <form action="#" id="form">
+      <input type="text" id="email" placeholder="Enter Email" onkeydown="validation()">
+    <button><img src="./images/icon-arrow.svg" alt=""></button>
+    <span id="text"></span>
+    </form>
   </div>
   <div class="right-side">
     <img src="./images/hero-desktop.jpg" alt="image" class="herro-image">
@@ -39,5 +42,6 @@
   <footer>
     
   </footer>
+  <script src="./app.js"></script>
 </body>
 </html>

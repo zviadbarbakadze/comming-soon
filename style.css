@@ -4,6 +4,7 @@
 }
 .container{
     display:flex;
+    justify-content: space-between;
 }
 .logo{
     margin-top:100px;
@@ -24,32 +25,95 @@
 .text-pinky{
     color:hsl(0, 36%, 70%);
     margin-left: 200px;
+    width:400px;
     
 
 }
 .soon{
     margin-bottom: 50px;
 }
-.email{
-    margin-left: 200px;
-    margin-top:50px;
-    width: 400px;
-    height: 50px;
-    border-radius: 20px;
-    border-color:hsl(0, 36%, 70%); 
-}
+
 ::placeholder{
     color:hsl(0, 36%, 70%); 
      padding-left: 15px; 
 }
-.arrow{
-    background-color:  hsl(0, 93%, 68%);
-    border-radius: 20px;
-    margin-left: -52px;
-    margin-bottom: -20px;
+
+   
+
+.herro-image{
+    height:100vh;
+}
+#email{
+    width:400px;
     height: 50px;
-    width: 50px;
+    margin-left: 200px;
+    margin-top: 50px;
+    outline: none;
+    border: 2px solid palevioletred;
+    border-radius: 30px;
+}
+button{
+    background-color: palevioletred;
+    outline: none;
+    border: 1px solid palevioletred;
+    width:100px;
+    height: 60px;
+    border-radius: 20px;
+    margin-left: -100px;
     cursor: pointer;
+    box-shadow: 5px 5px 2px gray;
    
 }
- 
+#text{
+    color: palevioletred;
+    font-size: 20px;
+}
+@media(max-width:1000px){
+    .container{
+        max-width:90%;
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .herro-image{
+        width:100%;
+    }
+   
+}
+@media(max-width:800px){
+    .container{
+        max-width:90%;
+       
+    }
+    .left-side{
+        max-width:90%;
+        margin-left: 0;
+    }
+    #form{
+        max-width:90%;
+      
+        
+    }
+    #email{
+        max-width:70%;
+        margin-left: 0;
+        
+    }
+    button{
+        max-width: 50%;
+    }
+    .main-text{
+        margin-left: 0;
+    }
+    .second-text{
+        margin-left: 0;
+    }
+    .logo{
+        margin-left:0;
+
+    }
+    .text-pinky{
+        margin-left: 0;
+        max-width:300px;
+    }
+}
